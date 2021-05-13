@@ -36,8 +36,12 @@ workflows:
       - build:
           filters:
             branches:
-              ignore: develop
+              only:
+                - main
+                - develop
       - deploy:
           filters:
-            branches:
-              only: develop
+            barnches:
+              only:
+                - main
+                - develop
