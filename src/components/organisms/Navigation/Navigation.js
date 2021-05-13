@@ -8,8 +8,10 @@ const Navigation = () => {
         <h1>Shoplo</h1>
       </Logo>
       <NavWrapper>
-        <StyledLink to="/">Home</StyledLink>
-        <StyledLink to="/blog">Blog</StyledLink>
+        <StyledLink exact to="/">
+          Home
+        </StyledLink>
+        <StyledLink to="/cart">cart</StyledLink>
       </NavWrapper>
     </Wrapper>
   );
